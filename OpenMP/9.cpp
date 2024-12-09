@@ -61,7 +61,7 @@ double run_with_nested_parallel(int data_size, int num_threads, int num_runs) {
         int max_of_mins = INT_MIN;
 
         omp_set_num_threads(num_threads);
-
+        omp_set_nested(1);
         auto omp_start = chrono::high_resolution_clock::now();
 
         #pragma omp parallel

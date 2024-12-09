@@ -66,6 +66,7 @@
         "random": "cpp",
         "queue": "cpp",
         "condition_variable": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "deque": "cpp"
     }
 }
