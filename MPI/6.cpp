@@ -93,7 +93,7 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     const int num_runs = 10;
-    const int data_sizes[] = {100000, 1000000, 10000000};
+    const int data_sizes[] = {10, 50, 100, 200};
 
     for (int data_size : data_sizes) {
         for (int mode = 1; mode <= 3; ++mode) {

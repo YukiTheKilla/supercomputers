@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
 
             // Искусственная нагрузка для вычислений
             auto compute_start = chrono::high_resolution_clock::now();
-            this_thread::sleep_for(chrono::microseconds(compute_time)); // Эмулируем вычисления
+            this_thread::sleep_for(chrono::microseconds(compute_time / size)); // Эмулируем вычисления
 
             // Локальная операция (например, просто сложение случайных чисел)
             long long local_result = 0;
